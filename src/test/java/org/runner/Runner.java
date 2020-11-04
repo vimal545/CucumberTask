@@ -19,10 +19,10 @@ import io.appium.java_client.android.AndroidDriver;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src\\test\\resources",glue = {""},dryRun = true,plugin = {"pretty" 
-		,"html:\\src\\test\\resources\\Reporting",
-		"junit:\\src\\test\\resources\\Reporting\\cucumber.xml",
-         "json:\\src\\test\\resources\\Reporting\\cucumber.json"})
+@CucumberOptions(features = "src\\test\\resources",glue = {"org.step"},dryRun = false,monochrome = true,plugin = {"pretty" 
+		,"html:src\\test\\resources\\Reporting",
+		"junit:src\\test\\resources\\Reporting\\cucumber.xml",
+         "json:src\\test\\resources\\Reporting\\cucumber.json"})
 
 public class Runner {
 	

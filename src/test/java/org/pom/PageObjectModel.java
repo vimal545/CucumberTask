@@ -13,12 +13,11 @@ public class PageObjectModel extends BaseClass {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy (id="com.mirrorfly:id/text_agree")
 	
-	private MobileElement click;
+	@FindBy(xpath = "//div[@class='profile-img-name']")
+	private WebElement visible;
 	
-	public MobileElement getClick() {
-		return click;
+	
 	}
 
-}
+
